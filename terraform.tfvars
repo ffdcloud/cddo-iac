@@ -1,0 +1,10 @@
+aws_region      = "us-east-1"
+key_pair_name   = "cddental-key-pair"
+github_repo_url = "https://github.com/ffdcloud/cddo.git"
+ec2_name        = "cddental-ec2-instance"
+rds_identifier  = "cddental-rds-db-instance"
+rds_db_name     = "myhmsdb"
+rds_db_user     = "admin"
+rds_db_password = "Password1234"
+rds_db_port     = 3306
+rds_name_tag    = "cddental-rds-db-instance"
