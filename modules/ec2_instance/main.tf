@@ -9,7 +9,7 @@ data "aws_ami" "amazon_linux_2" {
 }
 
 resource "aws_security_group" "ec2_security_group" {
-  name        = "dental-ec2-security-group"
+  name        = "cddental-ec2-security-group"
   description = "Security group for Calgary Downtown Dental Office EC2 instance"
 
   # HTTP
