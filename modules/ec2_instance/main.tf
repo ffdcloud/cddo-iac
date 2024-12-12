@@ -58,14 +58,17 @@ resource "aws_instance" "ec2_instance" {
 
     sudo yum install git -y
 
+    sudo amazon-linux-extras enable php8.0
+    sudo yum install php php-cli php-mbstring php-xml php-soap php-zip php-mysqlnd -y
+
     sudo yum install httpd -y
     sudo systemctl start httpd
     sudo systemctl enable httpd
 
     sudo yum install aws-cli unzip -y
 
-    sudo yum -y install ruby
-    sudo yum -y install wget
+    sudo yum install ruby -y
+    sudo yum install wget -y
     cd /home/ec2-user
     wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install
     sudo chmod +x ./install
